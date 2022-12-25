@@ -1,0 +1,21 @@
+//was easy but the calculation did'nt came in my mind.t4 porjonto first tc er example dekhe milaisi
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define op() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+const int mx=5e3+123;
+int a[mx];
+int main()
+{
+op();
+int n,k,l,c,d,p,nl,np;
+cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+int fc=(k*l)/nl;//vabsi n diye vag jabe
+int sc=c*d;
+int tc=p/np;//kheal kori nai np diye je vag jai
+int foc=min(fc,sc);
+int fic=min(sc,tc);
+int last=min(foc,fic)/n;
+cout<<last<<endl;
+
+}
